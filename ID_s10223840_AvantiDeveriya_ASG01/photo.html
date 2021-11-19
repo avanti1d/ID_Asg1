@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photography Exibition</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="zoom" id="fullbox">
+        <img src="photo1.jpeg" id="full">
+        <span onclick="closefull()">x</span>
+    </div>
+    <div class="images">
+        <img src="photo1.jpeg" onclick="openfull(this.src)">
+        <img src="photo2.jpeg" onclick="openfull(this.src)">
+        <img src="photo3.jpeg" onclick="openfull(this.src)">
+        <img src="photo4.jpeg" onclick="openfull(this.src)">
+        <img src="photo5.jpeg" onclick="openfull(this.src)">
+        <img src="photo6.jpg" onclick="openfull(this.src)">
+        <img src="photo7.jpg" onclick="openfull(this.src)">
+        <img src="photo8.jpg" onclick="openfull(this.src)">
+    </div>
+<script>
+    var fullbox=document.getElementById("fullbox");
+    var full=document.getElementById("full");
+
+    function openfull(photo){
+        fullbox.style.display = "flex";
+        full.src=photo;
+
+    }
+
+    function closefull(){
+        fullbox.style.display = "none";
+    }
+</script>
+    <div class="align">
+        <a href="contact.html"class="more">Click here for contact</a>
+    </div>
+
+</body>
+
+
+</html>
