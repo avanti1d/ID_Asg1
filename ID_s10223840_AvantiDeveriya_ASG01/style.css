@@ -119,3 +119,197 @@ nav{
     margin: 0 auto;
 }
 
+.images{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 30px;
+}
+
+.images img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.images img:hover{
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+
+}
+.zoom{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0,0,0,0.9);
+    top: 0;
+    left:0;
+    display: none;
+    align-items:center;
+    justify-content: center;
+    z-index: 100; 
+}
+
+.zoom img{
+    width: 90%;
+    max-width: 500px;
+
+}
+
+.zoom span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color:white;
+    cursor: pointer;
+}
+
+.more{
+    display:inline-block;
+    text-decoration: none;
+    color:snow;
+    border: 1px solid #ffff;
+    padding: 12px 30px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.more:hover{
+    border: 1px solid cornflowerblue;
+    background: cornflowerblue;
+    transition:1s;
+}
+
+.bkground{
+    background-image: url("1567665.png");
+    background-size:cover
+}
+
+.portfolio{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color:slategray;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px; 
+}
+
+.projects{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 30px;
+    border: black;
+    border-spacing: 15px 50px;
+    border-collapse: separate;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.projects img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+
+.container:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.contact{
+    background:gainsboro;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.contact h1{
+    text-align: center;
+    color: black
+}
+
+.border{
+    width: 100px;
+    height: 10px;
+    background:midnightblue;
+    margin: 40px auto;
+    
+}
+
+.form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+
+}
+
+.text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: black;
+    padding: 20px 40px;
+    outline: none;
+    color: white;
+    transition: 0.5s;
+
+}
+
+.text:hover{
+    box-shadow: 0 0 10px 40px gray;
+}
+
+textarea.text{
+    resize:none;
+    height: 120px;
+}
+
+.submit-btn{
+    float: right;
+    border: 0;
+    background:gray;
+    color: white;
+    padding: 12px 50px;
+    cursor: pointer;
+    transition:0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-btn:hover{
+    background: gray;
+
+
+}
